@@ -10,11 +10,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 public class CallBackTest {
     private WebDriver driver;
 
     @BeforeAll
-    static void setUpAll() {
+    public static void setupAll() {
         WebDriverManager.chromedriver().setup();
     }
 
@@ -36,7 +37,7 @@ public class CallBackTest {
     }
 
     @Test
-    void shouldSubmitRequestSuccessfully() {
+    public void shouldSubmitRequestSuccessfully() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Василенко Виктория");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79211012323");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
