@@ -6,7 +6,6 @@ group 'ru.netology'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = '11'
-targetCompatibility = '11'
 
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
@@ -16,8 +15,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'ch.qos.logback:logback-classic:1.4.5'
-    implementation 'org.slf4j:slf4j-api:1.7.36'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.2'
 
     testImplementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
